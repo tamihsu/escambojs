@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+		<title>Escambo</title>
+
+		<!-- BOOTSTRAP CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+		<!-- MEU CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+
+
+<body>
+
+
+
+	<header>
+
+	<!-- teste de nav -->
+	<nav id="navbar-example2" class="navbar navbar-light bg-light">
+  <a class="navbar-brand" onclick="window.scroll({top: 2500, behavior: 'smooth'})">Escambo</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" onclick="window.scroll({top: 500, behavior: 'smooth'})">Login</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" onclick="window.scroll({top: 1276, behavior: 'smooth'})">Escambar</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#one">Login</a>
+        <a class="dropdown-item" href="#two">Escamba</a>
+        <div role="separator" class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#three">three</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+
+
+</div>
+		<!-- barra de navegação -->
+		
+
+</header>
+
+
+
+<!-- ~topo do site -->
+<section class="topo">
+
+	<!-- carrosel  -->
+ <style media="screen">
+      .carrosel{
+        display: none;
+      }
+      .ativa{
+        display: block;
+      }
+    </style>
+
+    <img src="img/teste02.jpg" alt="" id = "carrosel" class="ativa">
+    <img src="img/teste01.jpg" alt="" id = "carrosel" >
+    <img src="img/teste02.jpg" alt="" id = "carrosel">
+    <img src="img/teste01.jpg" alt="" id = "carrosel">
+
+    <script type="text/javascript">
+      let imgs = document.querySelectorAll('img');
+      let slider = 0;
+      function avancarSlide(){
+        imgs[slider].style.display = 'none';
+        slider++;
+        if(slider >= imgs.length){
+          slider = 0;
+        }
+        imgs[slider].style.display = 'block';
+      }
+      setInterval(avancarSlide, 2000);
+    </script>
+
+
+</section>
+
+
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+  <h4 id="fat">
+<!-- parte e logins -->
+<section class="section2">
+
+	<div class="container">
+
+	  <div class="row">
+
+
+	  	<!-- caixa esquerda -->
+
+	    <div class="w-100"></div>
+
+		    <div class="col" id="linha"><form>
+
+
+	  				<h1>Cadastre-se</h1>
+
+
+				  <div class="form-group">
+				 <i class="fa fa-address-card-o" aria-hidden="true"></i>
+				    <label for="exampleInputEmail1">Nome:</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome completo">
+				    <small id="emailHelp" class="form-text text-muted"></small>
+
+				    <label for="exampleInputEmail1">Email:</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="exemplo@email.com">
+				    <small id="emailHelp" class="form-text text-muted"></small>
+
+				  </div>
+
+
+				  <div class="form-group">
+
+				    <label for="exampleInputPassword1">Senha:</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Crie sua senha">
+
+				  </div>
+
+
+				  <div class="form-group">
+
+				    <label for="exampleInputPassword1">Confirme sua senha:</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Repita sua senha">
+
+				  </div>
+
+				  <div class="form-check">
+
+				    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+				    <label class="form-check-label" for="exampleCheck1">Aceito os termos de uso.</label>
+
+				  </div>
+				  <br>
+
+			  <button type="submit" class="btn btn-primary alinbotao">Cadastrar :)</button>
+
+			</form></div>
+
+
+
+
+
+
+		<!-- caixa direita -->
+	    <div class="col" >
+	 		<form>
+
+	    			<h1>Login</h1>
+
+	    			<div class="form-group">
+
+				    <label for="exampleInputEmail1">Email:</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="exemplo@email.com">
+				    <small id="emailHelp" class="form-text text-muted"></small>
+
+				  </div>
+
+
+
+				  <div class="form-group">
+
+				    <label for="exampleInputPassword1">Senha:</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha">
+
+				  </div>
+
+
+
+				  <div class="form-check">
+
+				    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+				    <label class="form-check-label" for="exampleCheck1">Lembrar do meu usuário!</label>
+
+				  </div>
+				  <br>
+
+			          <button type="submit" class="btn btn-primary alinbotao">Escambar \õ/</button>
+			</form>
+			</form>
+	  </div>
+	</div>
+</h4>
+</section>
+
+
+
+
+
+<section class="section3">
+
+<div>
+	<!-- barra de pesquisa -->
+	<nav class="navbar navbar-light bg-light">
+
+
+		<h2>Encontre seu escambo:</h2>
+
+	  <form class="form-inline">
+
+	    <input class="form-control mr-md-4" id="tampesq"  type="search" placeholder="Digite aqui o escambo que você procura :)" aria-label="Search">
+
+	    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Pesquisar</button>
+
+	  </form>
+
+	</nav>
+
+<h4>
+
+
+	<h3 id="sugerid">Escambos sugeridos:</h3>
+
+<!-- Cards  -->
+	<div class="container" id="cont1">
+		  <div class="row">
+
+		    <div class="col-sm">
+				 <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/barbeiro.jpeg" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Barbeiro</h5>
+				    <p class="card-text">Jonas da Silva <br> São Paulo - Centro </p>
+				    <a href="#" class="btn btn-primary">Escambar</a>
+				  </div>
+				</div>
+		    </div>
+
+
+
+
+		    <div class="col-sm">
+		      <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/cabelereira.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Cabelereira</h5>
+				    <p class="card-text">Joana d'Arc <br> São Paulo - Guarulhos </p>
+				    <a href="#" class="btn btn-primary">Escambar</a>
+				  </div>
+				</div>
+		    </div>
+
+
+
+
+		    <div class="col-sm">
+		      <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/manutenção.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Manutenção Simples</h5>
+				    <p class="card-text"> José Pinheiros <br> São Paulo - Aricanduva </p>
+				    <a href="#" class="btn btn-primary">Escambar</a>
+				  </div>
+				</div>
+			</div>
+
+
+
+
+		 </div>
+	</div>
+
+<!-- card linha 2 -->
+<div class="container">
+		  <div class="row">
+
+		    <div class="col-sm">
+				 <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/professor.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Professora de Física </h5>
+				    <p class="card-text"> Luana do Vale <br> São Paulo - Itaquera</p>
+				    <a href="#" class="btn btn-primary">Escamabar</a>
+				  </div>
+				</div>
+		    </div>
+
+
+
+
+		    <div class="col-sm">
+		      <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/passeador.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Passeador de Cães</h5>
+				    <p class="card-text">Luan Pedrosa <br> São Paulo - Bela Vista</p>
+				    <a href="#" class="btn btn-primary">Escambar</a>
+				  </div>
+				</div>
+		    </div>
+
+
+
+
+		    <div class="col-sm">
+		      <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/entregas.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title"> Entregador</h5>
+				    <p class="card-text">Marina Alvez <br> São Paulo - Bela Vista</p>
+				    <a href="#" class="btn btn-primary">Escambar</a>
+				  </div>
+				</div>
+			</div>
+
+</div>
+
+
+<!-- proximos a mim -->
+<section class="section4">
+
+<h1 id="proxmim">Escambos próximos a mim:</h1>
+
+<!-- buscar localização -->
+
+<div class="container" id="cont2">
+  <div class="row">
+    <div class="col">
+
+
+      <!-- MAPS caixa esquerda -->
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.163354378367!2d-46.65655378544241!3d-23.56257588468229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8e4bfffff%3A0x7fcdda51e521566!2sWeWork+Paulista!5e0!3m2!1spt-BR!2sbr!4v1515754971412" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    </div>
+
+
+    <!-- caixa direita -->
+
+    <div class="col" id="coloque">
+    	<h3>Coloque o endereço:</h3>
+			 <nav class="navbar navbar-light bg-light">
+			  <form class="form-inline">
+			    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			  </form>
+			</nav>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+	<!-- Cards  -->
+
+	<div class="container" id="cont3">
+		  <div class="row">
+
+		    <div class="col-sm">
+				 <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/eletricista.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Eletricista</h5>
+				    <p class="card-text"> Marina Alvez <br> São Paulo - São Paulo  - Bela Vista</p>
+				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				  </div>
+				</div>
+		    </div>
+
+
+
+
+		    <div class="col-sm">
+		      <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/unhas.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Manicure</h5>
+				    <p class="card-text">Marina Alvez <br> São Paulo - São Paulo  - Bela Vista</p>
+				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				  </div>
+				</div>
+		    </div>
+
+
+
+
+		    <div class="col-sm">
+		      <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/mercado.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Comprador</h5>
+				    <p class="card-text">Marina Alvez <br> São Paulo - São Paulo  - Bela Vista</p>
+				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				  </div>
+				</div>
+			</div>
+
+
+
+
+		 </div>
+	</div>
+
+<!-- card linha 2 -->
+<div class="container" id="cont4">
+		  <div class="row">
+
+		    <div class="col-sm">
+				 <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/professor.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Professora de Física</h5>
+				    <p class="card-text">Marina Alvez <br> São Paulo - São Paulo  - Bela Vista</p>
+				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				  </div>
+				</div>
+		    </div>
+
+
+
+
+		    <div class="col-sm">
+		      <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/livros.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Troca de Livros</h5>
+				    <p class="card-text">Marina Alvez <br> São Paulo - São Paulo  - Bela Vista</p>
+				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				  </div>
+				</div>
+		    </div>
+
+
+
+
+		    <div class="col-sm">
+		      <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/entregas.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Entregador</h5>
+				    <p class="card-text">Marina Alvez <br> São Paulo - São Paulo  - Bela Vista</p>
+				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				  </div>
+				</div>
+			</div>
+
+
+
+
+		 </div>
+	</div>
+</section>
+
+
+
+<!-- footer -->
+
+<footer>
+
+	<div class="alert alert-dark" role="alert">
+
+  		Escambo
+
+		<a href="#" class="alert-link espacof">Sobre nós</a>
+
+		<a href="#" class="alert-link espacof">Termos de uso</a>
+
+		<a href="#" class="alert-link espacof">Denunciar escambo</a>
+
+	</div>
+
+</footer>
+
+
+</body>
+</html>

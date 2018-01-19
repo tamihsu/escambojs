@@ -1,0 +1,71 @@
+.borda {
+	width: 600px;
+  height: 400px;/*Altura da linha*/
+  border-right: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+}
+
+.section2{
+
+	padding-top: 7%;
+	padding-bottom: 7%;
+}
+
+.serv{
+	margin-left: 1%;
+}
+
+#cont1 {
+	padding-top: 2%;
+	padding-bottom: 5%;
+}
+
+#cont2{
+	padding-top: 3%;
+	padding-bottom: 5%;
+}
+
+#coloque{
+	padding-top: 10%;
+}
+
+#cont3{
+	
+	padding-bottom: 5%;
+}
+
+#cont4{
+	padding-bottom: 7%;
+}
+
+#linha {
+	border-right: 2px solid black;
+}
+
+.alinbotao{
+	float: right;
+}
+
+.espacof{
+
+	padding: 2%;
+}
+
+#tampesq{
+	width: 400px;
+}
+
+
+
+#carrosel{
+	width: 100%;
+}
+
+
+
+#proxmim{
+	padding-top: 5%;
+}
+
+#sugerid{
+	padding-left: 8%;
+}
